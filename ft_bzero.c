@@ -1,30 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sergio-jimenez <sergio-jimenez@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/13 02:18:08 by sergio-jime       #+#    #+#             */
-/*   Updated: 2025/03/16 23:48:35 by sergio-jime      ###   ########.fr       */
+/*   Created: 2025/03/17 01:59:37 by sergio-jime       #+#    #+#             */
+/*   Updated: 2025/03/17 02:03:52 by sergio-jime      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-**	@brief ft_isascii - Checks if a character is an ASCII character.
-**	@param c Character to check, represented as an integer (ASCII value).
+**	@brief Fill memory with zero-valued bytes
+**	@param s Pointer to the memory area to initialize
+**	@param n Number of bytes to fill
 **	
-**	Verifies if the character falls within the standard ASCII range
-**	(0 to 127 inclusive, or 0x00 to 0x7F in hexadecimal).
+**	This function sets the first n bytes of the memory area pointed to by s
+**	to zero (ASCII NUL characters '\0'). Commonly used to initialize memory
+**	blocks before use.
 **	
-**	@return 1 if the character is within ASCII range, 0 otherwise.
+**	@note Uses unsigned char operations to guarantee byte-level access
 */
 
 #include "libft.h"
 
-int	ft_isascii(int c)
+void	ft_bzero(void *s, size_t n)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	return (0);
+	ft_memset(s, 0, n);
 }

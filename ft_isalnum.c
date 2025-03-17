@@ -6,18 +6,18 @@
 /*   By: sergio-jimenez <sergio-jimenez@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 02:06:43 by sergio-jime       #+#    #+#             */
-/*   Updated: 2025/03/13 02:14:31 by sergio-jime      ###   ########.fr       */
+/*   Updated: 2025/03/17 02:04:53 by sergio-jime      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-**	ft_isalnum - Checks if a character is alphanumeric.
-**	@c: Character to check, represented as an integer (ASCII value).
+**	@brief ft_isalnum - Checks if a character is alphanumeric.
+**	@param c Character to check, represented as an integer (ASCII value).
 **	
 **	Verifies if the character is either a decimal digit ('0'-'9'),
 **	an uppercase letter ('A'-'Z'), or a lowercase letter ('a'-'z').
 **	
-**	Return: 1 if the character is alphanumeric, 0 otherwise.
+**	@return 1 if the character is alphanumeric, 0 otherwise.
 */
 
 #include "libft.h"

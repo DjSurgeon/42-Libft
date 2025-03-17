@@ -6,18 +6,18 @@
 /*   By: sergio-jimenez <sergio-jimenez@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 02:13:20 by sergio-jime       #+#    #+#             */
-/*   Updated: 2025/03/13 02:15:17 by sergio-jime      ###   ########.fr       */
+/*   Updated: 2025/03/16 23:49:27 by sergio-jime      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-**	ft_isprint - Checks if a character is a printable ASCII character.
-**	@c: Character to check, represented as an integer (ASCII value).
+**	@brief ft_isprint - Checks if a character is a printable ASCII character.
+**	@param c Character to check, represented as an integer (ASCII value).
 **	
 **	Verifies if the character falls within the printable ASCII range
 **	(32 ' ' to 126 '~' inclusive).
 **	
-**	Return: 1 if the character is printable, 0 otherwise.
+**	@return 1 if the character is printable, 0 otherwise.
 */
 
 #include "libft.h"

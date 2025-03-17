@@ -1,30 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sergio-jimenez <sergio-jimenez@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/13 02:18:08 by sergio-jime       #+#    #+#             */
-/*   Updated: 2025/03/16 23:48:35 by sergio-jime      ###   ########.fr       */
+/*   Created: 2025/03/17 00:24:58 by sergio-jime       #+#    #+#             */
+/*   Updated: 2025/03/17 00:31:13 by sergio-jime      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-**	@brief ft_isascii - Checks if a character is an ASCII character.
-**	@param c Character to check, represented as an integer (ASCII value).
+**	@brief ft_strlen - Calculates the length of a null-terminated string
+**	@param s Null-terminated string to measure
 **	
-**	Verifies if the character falls within the standard ASCII range
-**	(0 to 127 inclusive, or 0x00 to 0x7F in hexadecimal).
+**	Iterates through the characters of the string until encountering
+**	the null terminator ('\0'), counting the number of characters.
 **	
-**	@return 1 if the character is within ASCII range, 0 otherwise.
+**	@return Number of characters in the string (excluding null terminator)
 */
 
 #include "libft.h"
 
-int	ft_isascii(int c)
+size_t	ft_strlen(const char *s)
 {
-	if (c >= 0 && c <= 127)
-		return (1);
-	return (0);
+	size_t	i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }
