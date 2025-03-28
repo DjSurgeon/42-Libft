@@ -6,7 +6,7 @@
 /*   By: sergio-jimenez <sergio-jimenez@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 01:53:55 by sergio-jime       #+#    #+#             */
-/*   Updated: 2025/03/17 02:00:03 by sergio-jime      ###   ########.fr       */
+/*   Updated: 2025/03/27 12:54:49 by sergio-jime      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,10 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	const unsigned char	*byte1;
-	const unsigned char	*byte2;
+	const unsigned char	*byte1 = (const unsigned char *)s1;
+	const unsigned char	*byte2 = (const unsigned char *)s2;
 	size_t				i;
 
-	byte1 = (const unsigned char *) s1;
-	byte2 = (const unsigned char *) s2;
 	i = 0;
 	if (n == 0)
 		return (0);

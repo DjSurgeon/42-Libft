@@ -6,7 +6,7 @@
 /*   By: sergio-jimenez <sergio-jimenez@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/17 02:26:52 by sergio-jime       #+#    #+#             */
-/*   Updated: 2025/03/17 02:31:09 by sergio-jime      ###   ########.fr       */
+/*   Updated: 2025/03/27 13:05:06 by sergio-jime      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	const unsigned char	*memory2;
 	size_t				i;
 
-	memory1 = (const unsigned char *) s1;
-	memory2 = (const unsigned char *) s2;
+	memory1 = (const unsigned char *)s1;
+	memory2 = (const unsigned char *)s2;
 	i = 0;
 	while (i < n)
 	{
